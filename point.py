@@ -2,10 +2,10 @@ class Point():
   def __init__(self, x=0, y=0):
     self.x = x
     self.y = y
-  
+
   def __str__(self):
     return "({},{})".format(self.x, self.y)
-  
+
   def distance(self, p2=None):
     if p2 is None:
       p2 = Point.ORIGIN
@@ -17,7 +17,7 @@ class Point():
 # so let's attach ORIGIN to the Point class after it's
 # already been all defined.
 Point.ORIGIN = Point()
-    
+
 # we can access ORIGIN through the Point class.
 print(Point.ORIGIN)
 
