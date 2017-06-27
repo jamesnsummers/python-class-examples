@@ -17,14 +17,14 @@ class BankAccount():
             self.overdraft_fees += 20
         return amount
 
-SAVINGS = BankAccount("SAVINGS")
-CHECKING = BankAccount("CHECKING")
+SAVINGS = BankAccount("savings")
+CHECKING = BankAccount("checking")
 
 print("My new {} account has ${}.".format(SAVINGS.kind, SAVINGS.balance))
 print("My new {} account has ${}.".format(CHECKING.kind, CHECKING.balance))
 print()
 
-WAGES = 800
+WAGES = 50
 SAVINGS.deposit(WAGES)
 
 
